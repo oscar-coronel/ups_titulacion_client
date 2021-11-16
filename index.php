@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="row mt-2">
+				<div class="row mt-2 mb-3">
 					<div class="col-12 col-md-3 col-lg-2">
 						<img src="./assets/img/museo.jpg" class="img-fluid" />
 					</div>
@@ -128,19 +128,23 @@
 	  <div class="modal-dialog modal-dialog-centered modal-sm">
 	    <div class="modal-content">
 	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <h5 class="modal-title" id="exampleModalLabel">Cantidad de Tickets</h5>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	      </div>
 	      <div class="modal-body">
-	        ...
+	        <div class="form-group">
+	        	<input type="range" placeholder="Cantidad de Tickets" name="cantidad_tickets" id="cantidad_tickets" class="form-range" min="0" max="10" value="0" />
+	        	<output class="fw-bold" style="display: block; text-align: center;" id="ticket_value">0</output>
+	        </div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	        <button type="button" class="btn btn-primary btn-sm w-100">Adquirir Tickets</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+
+	<script type="text/javascript" src="js/index.js?v=<?php echo uniqid(); ?>"></script>
 
 </body>
 </html>
